@@ -6,6 +6,8 @@
     <title>Insert Title</title>
 </head>
 <body>
-  result : ${res}
+  result : ${c}
+
+  Wlcome back coder : ${name}
 </body>
 </html>

@@ -7,9 +7,9 @@
 </head>
 <body>
    Welcome to Spring MVC
-      <form action= "add">
-       Enter first number : <input type="text" name="num1"><br>
-       Enter second number : <input type="text" name="num2"><br>
+      <form action= "addCoder">
+       Enter Coder Id : <input type="text" name="cid"><br>
+       Enter Coder Name : <input type="text" name="name"><br>
        <input type="submit">
        </form>
 </body>
