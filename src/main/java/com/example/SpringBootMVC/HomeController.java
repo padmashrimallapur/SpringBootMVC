@@ -3,10 +3,12 @@ import com.example.SpringBootMVC.model.Coder;
 import org.springframework.stereotype.Controller;
 
 import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestParam;
 
+import java.util.Arrays;
+import java.util.List;
 
 @Controller
 public class HomeController {
@@ -22,13 +24,11 @@ public class HomeController {
         return "index";
     }
 
-    @RequestMapping("add")
-    public String add(@RequestParam("num1") int i, @RequestParam("num2") int j, Model m){
-
-        int res = i+j;
-        m.addAttribute("res", res);
-
-        return "results";
+    @GetMapping("getCoders")
+    public String getCoders(Model m){
+        List<Coder> coderList = Arrays.asList(new Coder(101, "Ansh"), new Coder(103, "Ram"));
+        m.addAttribute("result",coderList);
+        return "showCoders";
     }
 
     @RequestMapping("addCoder")

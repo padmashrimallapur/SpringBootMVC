@@ -5,6 +5,11 @@ public class Coder {
     int cid;
     String name;
 
+    public Coder(int cid, String name) {
+        this.cid = cid;
+        this.name = name;
+    }
+
     public int getCid() {
         return cid;
     }
