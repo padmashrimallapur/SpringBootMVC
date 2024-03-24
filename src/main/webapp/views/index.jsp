@@ -12,5 +12,10 @@
        Enter Coder Name : <input type="text" name="name"><br>
        <input type="submit">
        </form>
+
+          <form action= "getCoderByName" method="get">
+              Enter Coder Name : <input type="text" name="name"><br>
+              <input type="submit">
+           </form>
 </body>
 </html>

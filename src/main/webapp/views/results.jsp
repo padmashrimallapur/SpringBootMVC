@@ -8,6 +8,6 @@
 <body>
   result : ${c}
 
-  Wlcome back coder : ${name}
+  Welcome back coder : ${c.getName()}
 </body>
 </html>
